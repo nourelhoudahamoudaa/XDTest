@@ -1,0 +1,290 @@
+@prefix : <http://www.semanticweb.org/asus/ontologies/AnimalBehavior#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/asus/ontologies/AnimalBehavior> .
+
+<http://www.semanticweb.org/asus/ontologies/AnimalBehavior> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owl/hasChild
+<http://www.owl-ontologies.com/OurOnto+ATOL.owl/hasChild> rdf:type owl:ObjectProperty ;
+                                                          owl:inverseOf <http://www.semanticweb.org/asus/ontologies/ourontology#hasMother> .
+
+
+###  http://www.semanticweb.org/asus/ontologies/ourontology#hasMother
+<http://www.semanticweb.org/asus/ontologies/ourontology#hasMother> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/AbnormalBehavior
+<http://purl.obolibrary.org/obo/AbnormalBehavior> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Behavior> .
+
+
+###  http://purl.obolibrary.org/obo/Aggression
+<http://purl.obolibrary.org/obo/Aggression> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/AbnormalBehavior> .
+
+
+###  http://purl.obolibrary.org/obo/Child
+<http://purl.obolibrary.org/obo/Child> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Animal> .
+
+
+###  http://purl.obolibrary.org/obo/Drinking
+<http://purl.obolibrary.org/obo/Drinking> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owlIngestingBehavior> .
+
+
+###  http://purl.obolibrary.org/obo/Femal
+<http://purl.obolibrary.org/obo/Femal> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Animal> .
+
+
+###  http://purl.obolibrary.org/obo/Goat
+<http://purl.obolibrary.org/obo/Goat> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Category> .
+
+
+###  http://purl.obolibrary.org/obo/Head
+<http://purl.obolibrary.org/obo/Head> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Movement> .
+
+
+###  http://purl.obolibrary.org/obo/Isolation
+<http://purl.obolibrary.org/obo/Isolation> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/AbnormalBehavior> .
+
+
+###  http://purl.obolibrary.org/obo/Jaw
+<http://purl.obolibrary.org/obo/Jaw> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Movement> .
+
+
+###  http://purl.obolibrary.org/obo/Legs
+<http://purl.obolibrary.org/obo/Legs> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Movement> .
+
+
+###  http://purl.obolibrary.org/obo/Male
+<http://purl.obolibrary.org/obo/Male> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Animal> .
+
+
+###  http://purl.obolibrary.org/obo/Meat
+<http://purl.obolibrary.org/obo/Meat> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/Production> .
+
+
+###  http://purl.obolibrary.org/obo/MovingBehavior
+<http://purl.obolibrary.org/obo/MovingBehavior> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Behavior> .
+
+
+###  http://purl.obolibrary.org/obo/Pica
+<http://purl.obolibrary.org/obo/Pica> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/AbnormalBehavior> .
+
+
+###  http://purl.obolibrary.org/obo/Pond
+<http://purl.obolibrary.org/obo/Pond> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/Water> .
+
+
+###  http://purl.obolibrary.org/obo/Production
+<http://purl.obolibrary.org/obo/Production> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/River
+<http://purl.obolibrary.org/obo/River> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/Water> .
+
+
+###  http://purl.obolibrary.org/obo/Rumination
+<http://purl.obolibrary.org/obo/Rumination> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owlIngestingBehavior> .
+
+
+###  http://purl.obolibrary.org/obo/Sheep
+<http://purl.obolibrary.org/obo/Sheep> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Category> .
+
+
+###  http://purl.obolibrary.org/obo/Springs
+<http://purl.obolibrary.org/obo/Springs> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/Water> .
+
+
+###  http://purl.obolibrary.org/obo/Swamp
+<http://purl.obolibrary.org/obo/Swamp> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/Water> .
+
+
+###  http://purl.obolibrary.org/obo/Water
+<http://purl.obolibrary.org/obo/Water> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/Wool-biting
+<http://purl.obolibrary.org/obo/Wool-biting> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/AbnormalBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlBackPosture
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlBackPosture> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owl/HealthState> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlEarsPosture
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlEarsPosture> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owl/HealthState> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlEyePosture
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlEyePosture> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owl/HealthState> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlHoofPosture
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlHoofPosture> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owl/HealthState> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlHornPosture
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlHornPosture> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owl/HealthState> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlImmobility
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlImmobility> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Movement> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlIngestingBehavior
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlIngestingBehavior> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Behavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlJumping
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlJumping> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/MovingBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlLegPosture
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlLegPosture> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owl/HealthState> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlMilk
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlMilk> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/Production> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlNibbling
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlNibbling> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owlIngestingBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlPanting
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlPanting> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/AbnormalBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlPlaying
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlPlaying> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/MovingBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlPreference
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlPreference> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owlIngestingBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlRestBehavior
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlRestBehavior> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Behavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlRunning
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlRunning> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/MovingBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlSitting
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlSitting> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owlRestBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlStanding
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlStanding> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owlRestBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlSuckling
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlSuckling> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owlIngestingBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlTail
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlTail> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.semanticweb.org/asus/ontologies/ourontology#Movement> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlWalking
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlWalking> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://purl.obolibrary.org/obo/MovingBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owlWallowing
+<http://www.owl-ontologies.com/OurOnto+ATOL.owlWallowing> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://purl.obolibrary.org/obo/MovingBehavior> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owl/BareSoil
+<http://www.owl-ontologies.com/OurOnto+ATOL.owl/BareSoil> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owl/Vegetation> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owl/CompleteGroundCover
+<http://www.owl-ontologies.com/OurOnto+ATOL.owl/CompleteGroundCover> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owl/Vegetation> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owl/HealthState
+<http://www.owl-ontologies.com/OurOnto+ATOL.owl/HealthState> rdf:type owl:Class .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owl/PartialGroundCover
+<http://www.owl-ontologies.com/OurOnto+ATOL.owl/PartialGroundCover> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.owl-ontologies.com/OurOnto+ATOL.owl/Vegetation> .
+
+
+###  http://www.owl-ontologies.com/OurOnto+ATOL.owl/Vegetation
+<http://www.owl-ontologies.com/OurOnto+ATOL.owl/Vegetation> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/asus/ontologies/ourontology#Animal
+<http://www.semanticweb.org/asus/ontologies/ourontology#Animal> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/asus/ontologies/ourontology#Behavior
+<http://www.semanticweb.org/asus/ontologies/ourontology#Behavior> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/asus/ontologies/ourontology#Category
+<http://www.semanticweb.org/asus/ontologies/ourontology#Category> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/asus/ontologies/ourontology#Movement
+<http://www.semanticweb.org/asus/ontologies/ourontology#Movement> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,87 @@
+# This is a workflow that is able to split the user input file into separate files for each test case.
+# Trigger: On call
+# Input: None
+# Output: Several json files representing each test case. 
+
+# The name of the workflow
+name: Split UserInput.json
+
+# The event that triggers the action.
+on: 
+  workflow_dispatch:
+  
+jobs:
+# This workflow contains a job called "split"
+  split: 
+
+# The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+# Steps that are executed for this job
+    steps: 
+
+# Checks-out your repository under $GITHUB_WORKSPACE, so the job can access it
+      - uses: actions/checkout@v2
+
+# Install Homebrew
+      - name: Install Homebrew
+        shell: bash
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        
+  # install jq package
+      - name: Install jq
+        shell: bash
+        run: brew install jq
+  
+  # Print UserInput.json
+      - name: Print file
+        run: cat .xd-testing/UserInput.json
+
+  # First split of the UserInput file
+      - name: Split Ontologies from Fragments
+        run: |
+          file=".xd-testing/UserInput.json"
+          jq -cr 'keys[] as $k | "\($k)\t\(.[$k])"' "$file"  | awk -F\\t '{ file=$1".json"; print $2 > file; close(file); }'
+          
+  # Second split of the UserInput 
+      - name: Split test cases from the Fragments file
+        run: |
+          file="fragments.json"
+          jq -cr 'keys[] as $k | "\($k)\t\(.[$k])"' "$file"  | awk -F\\t '{ file=$1".json"; print $2 > file; close(file); }'
+        
+  # Delete txt file
+      - name: Delete txt file
+        run: rm fragments.json      
+        
+  
+  # Print new files
+      - name: Print new files
+        run: |
+          for i in `find . -name "*.json" -type f`; do
+            path=$i
+            cat $path
+          done
+  
+  # Create pull request to specific path
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: Create test case input file
+          labels: test case input
+          path: .xd-testing/TestCaseInput/readme.md
+ 
+
+        
+  
+
+
+      
+      
+      
+    
+    
+    
+      
+    
+    
+    
