@@ -6,50 +6,50 @@
         }
     ],
     "fragments": [
-      {
-          "name": "AnimalBehaviorFragment",
-          "ontologyName": "AnimalBehavior",
-          "fileName": "AnimalBehavior/AnimalBehaviorFragment/AnimalBehavior.owl",
-          "tests": [
-              {
-                  "type": "COMPETENCY_QUESTION",
-                  "content": "When was a musical performance recorded?",
-                  "reasoner": "hermiT 1.4.3.456",
-                  "status": "success",
-                  "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX o: <http://purl.obolibrary.org/obo/> PREFIX y: <http://www.semanticweb.org/asus/ontologies/ourontology/> SELECT  ?Category WHERE { o:GM_00 y:hasCategory ?C. ?C rdf:type ?Category }",
-                  "data": "",
-                  "dataFileName": "AnimalBehavior/AnimalBehaviorFragment/datasets/dataset.ttl",
-                  "expectedResults": "",
-                  "expectedResultsFileName": "AnimalBehavior/AnimalBehaviorFragment/expectedResults/ER.json",
-                  "id": "CQ001",
-                  "check": 1,
-                  "statusNotes": "Executed"
-              },
-              {
-                  "type": "INFERENCE_VERIFICATION",
-                  "content": "",
-                  "reasoner": "hermiT 1.4.3.456",
-                  "status": "failed",
-                  "query": "",
-                  "data": "",
-                  "dataFileName": "AnimalBehavior/AnimalBehaviorFragment/datasets/dataset.ttl",
-                  "expectedResults": "",
-                  "id": "IV001",
-                  "check": 0,
-                  "statusNotes": "Executed"
-              },
-              {
-                  "type": "ERROR_PROVOCATION",
-                  "content": "",
-                  "reasoner": "hermiT 1.4.3.456",
-                  "status": "failed",
-                  "data": "",
-                  "dataFileName": "AnimalBehavior/AnimalBehaviorFragment/datasets/EPData.ttl",
-                  "expectedResults": "",
-                  "id": "EP001",
-                  "statusNotes": "Executed"
-              }
-          ]
-      }
+        {
+            "name": "AnimalBehaviorFragment",
+            "ontologyName": "AnimalBehavior",
+            "fileName": "AnimalBehavior/AnimalBehaviorFragment/AnimalBehavior.owl",
+            "tests": [
+                {
+                    "type": "COMPETENCY_QUESTION",
+                    "content": "When was a musical performance recorded?",
+                    "reasoner": "hermiT 1.4.3.456",
+                    "status": "success",
+                    "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX o: <http://purl.obolibrary.org/obo/> PREFIX y: <http://www.semanticweb.org/asus/ontologies/ourontology/> SELECT  ?Category WHERE { o:GM_00 y:hasCategory ?C. ?C rdf:type ?Category }",
+                    "data": "",
+                    "dataFileName": "AnimalBehavior/AnimalBehaviorFragment/datasets/dataset.ttl",
+                    "expectedResults": "",
+                    "expectedResultsFileName": "AnimalBehavior/AnimalBehaviorFragment/expectedResults/ER.json",
+                    "id": "CQ001",
+                    "check": 1,
+                    "statusNotes": "Executed"
+                },
+                {
+                    "type": "INFERENCE_VERIFICATION",
+                    "content": "",
+                    "reasoner": "hermiT 1.4.3.456",
+                    "status": "warning",
+                    "query": "",
+                    "data": "",
+                    "dataFileName": "AnimalBehavior/AnimalBehaviorFragment/datasets/dataset.ttl",
+                    "expectedResults": "",
+                    "id": "IV001",
+                    "check": 0,
+                    "statusNotes": "[Errno 20] Not a directory: './AnimalBehavior/AnimalBehavior/AnimalBehaviorFragment/InferenceVerificationTest//IVTestCase/IV001.ttl'"
+                },
+                {
+                    "type": "ERROR_PROVOCATION",
+                    "content": "",
+                    "reasoner": "hermiT 1.4.3.456",
+                    "status": "warning",
+                    "data": "",
+                    "dataFileName": "AnimalBehavior/AnimalBehaviorFragment/datasets/EPData.ttl",
+                    "expectedResults": "",
+                    "id": "EP001",
+                    "statusNotes": "[Errno 20] Not a directory: './AnimalBehavior/AnimalBehavior/AnimalBehaviorFragment/ErrorProvocationTest/EPTestCase/EP001.ttl'"
+                }
+            ]
+        }
     ]
 }
