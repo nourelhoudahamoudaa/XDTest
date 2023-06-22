@@ -36,7 +36,7 @@
                     "expectedResults": "",
                     "id": "IV001",
                     "check": 0,
-                    "statusNotes": "[Errno 20] Not a directory: './AnimalBehavior/AnimalBehavior/AnimalBehaviorFragment/InferenceVerificationTest//IVTestCase/IV001.ttl'"
+                    "statusNotes": "[Errno 2] No such file or directory: '.XDTestingAnimalBehavior/AnimalBehaviorFragment/InferenceVerificationTest//IVTestCase/IV001.ttl'"
                 },
                 {
                     "type": "ERROR_PROVOCATION",
@@ -47,7 +47,7 @@
                     "dataFileName": "AnimalBehaviorFragment/datasets/EPData.ttl",
                     "expectedResults": "",
                     "id": "EP001",
-                    "statusNotes": "[Errno 20] Not a directory: './AnimalBehavior/AnimalBehavior/AnimalBehaviorFragment/ErrorProvocationTest/EPTestCase/EP001.ttl'"
+                    "statusNotes": "[Errno 2] No such file or directory: '.XDTestingAnimalBehavior/AnimalBehaviorFragment/ErrorProvocationTest/EPTestCase/EP001.ttl'"
                 }
             ]
         }
