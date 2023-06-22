@@ -34,7 +34,7 @@ def createOntologiesDirectory(name):
     # Directory
     directory = name
     # Parent Directory path
-    parent_dir = "./AnimalBehavior"
+    parent_dir = "./XDTesting"
     try:
         # Path
         path = os.path.join(parent_dir, directory)
@@ -144,7 +144,7 @@ def createFragmentDirectory(fragmentName, name):
     # Directory
     directory = fragmentName
     # Parent Directory path
-    parent_dir = "./AnimalBehavior/"+name
+    parent_dir = "./XDTesting/"+name
     # Path
     try:
         # Path
