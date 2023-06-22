@@ -1,0 +1,86 @@
+name: Construct IV test cases
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  validate-IV:
+    runs-on: ubuntu-latest
+        
+    steps:
+      - name: Checkout V2
+        uses: actions/checkout@v2
+      
+      - name: Construct IV test cases
+        run: |
+          echo "$ivPath"
+          ivPath="XDTesting/AnimalBehavior/Animal/GeneralConstraints.txt"
+          ivRequirements=$(grep -i '[IV][0-9][0-9]*:\s' $ivPath)
+          
+          echo "$sparqlPath"
+          sparqlPath="XDTesting/AnimalBehavior/Animal/SPARQLQueries.txt"
+          sparqlIVRequirements=$(grep -i '[SQIV][0-9][0-9]*:\s' $sparqlPath)
+          
+          base="https://raw.githubusercontent.com/"
+          base1=$(git config --get remote.origin.url | sed 's/.*\/\([^ ]*\/[^.]*\).*/\1/')
+          
+          echo "$MPbase"
+          MPbase="/main/XDTesting/AnimalBehavior/Animal/RecordingProcess.owl"
+          
+          echo "$tdbase"
+          tdbase="/main/XDTesting/AnimalBehavior/Animal/InferenceVerificationTest/IVDataSet/"
+          
+          echo "$tcbase"
+          tcbase="/main/XDTesting/AnimalBehavior/Animal/InferenceVerificationTest/IVTestCase/"
+          
+          echo "$mp"
+          mp="$base$base1$MPbase"
+          
+          echo "$ivtd"
+          ivtd="$base$base1$tdbase"
+          
+          echo "$ivtc"
+          ivtc="$base$base1$tcbase"
+          
+          mpPrefix="@prefix mp: < ${mp} > ."
+          tdPrefix="@prefix td: < ${ivtd} > ."
+          tcPrefix="@prefix mp: < ${ivtc} > ."
+          
+          echo '@prefix owlunit: <https://w3id.org/OWLunit/ontology/> . ' > ivTemplate.txt
+          echo $mpPrefix >> ivTemplate.txt 
+          echo $tdPrefix >> ivTemplate.txt 
+          echo $tcPrefix >> ivTemplate.txt 
+          echo 'tc:01 a owlunit:InferenceVerification ; owlunit:hasInputData td:IVDataSet.ttl ; owlunit:hasSPARQLUnitTest "' >> ivTemplate.txt 
+          
+          echo "$ivRequirements" > "ivRequirements.txt"
+          while read line; do
+            IVid=${line//[!0-9]/}
+            echo $IVid
+            if [[ $line =~ :(.+) ]]; then
+              IVstrresult=${BASH_REMATCH[1]}
+            else
+              echo "unable to parse string $line"
+            fi
+          done <ivRequirements.txt
+          
+          echo "$sparqlIVRequirements" > "sparqlIVRequirements.txt"
+            while read line; do
+              SQIVid=${line//[!0-9]/}
+              if [[ $line =~ :(.+) ]]; then
+                SQIVstrresult=${BASH_REMATCH[1]}
+              fi
+            done <sparqlIVRequirements.txt
+          
+          if [[ $IVid = $SQIVid ]]; then
+            echo $SQstrresult >> ivTemplate.txt 
+            echo ' " ; owlunit:hasReasoner owlunit:HermiT ; owlunit:hasExpectedResult true ; owlunit:testsOntology mp: .  ' >> ivTemplate.txt  
+          else
+            echo "No matching SPARQL query"
+          fi
+          
+          cp ivTemplate.txt XDTesting/AnimalBehavior/Animal/InferenceVerificationTest/IVTestCase/IVTestCase.ttl
+      
+      - name: Pull-to-master
+        uses: peter-evans/create-pull-request@v3
+          
+        

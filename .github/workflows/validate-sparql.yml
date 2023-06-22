@@ -1,0 +1,20 @@
+name: Validate SPARQL
+
+on:   
+  workflow_dispatch:
+
+jobs:
+  validate-SPARQL:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install rdflib 
+        run: |
+          pip install rdflib
+      - name: Run SPARQL validator
+        run: |
+          param="SELECT ?info ?name WHERE {?person rdfs:seeAlso ?info . ?person foaf:homepage ?name .}"
+          echo $param
+          scriptResult=$(python3 .github/script/validateSPARQL.py)
+          echo $scriptResult
+

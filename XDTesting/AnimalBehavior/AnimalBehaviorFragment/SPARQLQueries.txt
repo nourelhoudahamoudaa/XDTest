@@ -1,1 +1,0 @@
-SQCQ01: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX o: <http://purl.obolibrary.org/obo/> PREFIX y: <http://www.semanticweb.org/asus/ontologies/ourontology/> SELECT  ?Category WHERE { o:GM_00 y:hasCategory ?C. ?C rdf:type ?Category }

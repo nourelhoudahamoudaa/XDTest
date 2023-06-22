@@ -1,0 +1,85 @@
+# This is a workflow that is able to create temporary urls for the test cases and dataset files.
+# Trigger: Input cross check completed successfully. 
+# Input: The directory path of a test case or dataset file. 
+# Output: Four urls that are needed for a test case: 1. the test case url, 2. the corresponding dataset url, 3. the ontology url, 4. The OWL ontology url.
+
+# The name of the workflow
+name: Create URL
+
+# The event that triggers the action.
+on: 
+  workflow_dispatch:
+  
+jobs:
+  
+  # This workflow contains a job called "temporary-urls"
+  temporary-urls:
+    
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    # Steps that are executed for this job
+    steps:
+    
+      # Checks-out your repository under $GITHUB_WORKSPACE, so the job can access it
+      - uses: actions/checkout@v2
+
+      - name: testcase-url
+        run: |
+            cd XDTesting
+            cd AnimalBehavior-ontology
+            while read -r line; do
+            line="$line"
+            echo "Line read from file - $line" 
+            base="https://raw.githubusercontent.com/FiorelaCiroku/XD-Testing/main/XDTesting/AnimalBehavior-ontology/"
+            CQbase="/SPARQLUnitTest/CQTestCase"
+            IVbase="/InferenceVerificationTest/IVTestCase/"
+            EPbase="/ErrorProvocationTest/EPTestCase/"
+            echo "$CQtestcase"
+            echo "$IVtestcase"
+            echo "$EPtestcase"
+            CQtestcase="$base$line$CQbase"
+            IVtestcase="$base$line$IVbase"
+            EPtestcase="$base$line$EPbase"
+            echo "The prefixes of the test cases are is $CQtestcase, $IVtestcase, $EPtestcase."
+            done < UserInput.txt
+      
+      
+      - name: dataset-url
+        run: |
+            cd XDTesting
+            cd AnimalBehavior-ontology
+            while read -r line; do
+            line="$line"
+            echo "Line read from file - $line" 
+            base="https://raw.githubusercontent.com/FiorelaCiroku/XD-Testing/main/XDTesting/AnimalBehavior-ontology/"
+            CQbase="SPARQLUnitTest/CQDataSet/"
+            IVbase="/InferenceVerificationTest/IVDataSet/"
+            EPbase="/ErrorProvocationTest/EPDataSet/"
+            echo "$CQtestcase"
+            echo "$IVtestcase"
+            echo "$EPtestcase"
+            CQtestcase="$base$line$CQbase"
+            IVtestcase="$base$line$IVbase"
+            EPtestcase="$base$line$EPbase"
+            echo "The prefixes of the data sets are is $CQtestcase, $IVtestcase, $EPtestcase."
+            done < UserInput.txt
+            
+      
+      - name: ontology-url
+        run: |
+            echo "$ontologyURL"
+            ontologyURL="https://raw.githubusercontent.com/FiorelaCiroku/XD-Testing/main/XDTesting/AnimalBehavior-ontology/Situation/OWLFile.owl"
+            echo "The URL of the ontology is $ontologyURL"
+            
+      - name: OWL-url
+        run: |
+            echo "$OWLURL"
+            OWLURL="https://w3id.org/OWLunit/ontology/"
+            echo "The URL of the OWL ontology is $OWLURL"
+            
+           
+              
+              
+              
+              

@@ -1,0 +1,57 @@
+# This is a workflow that is able to setup the environment for the running of the test cases in XD.
+# Trigger: Input cross check completed successfully. 
+# Input: 
+# Output: 
+
+# The name of the workflow
+name: Setup environment
+
+# The event that triggers the action.
+on: 
+  workflow_dispatch:
+  
+jobs:
+# This workflow contains a job called "setup"
+  setup: 
+
+# The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+# Steps that are executed for this job
+    steps: 
+
+# Checks-out your repository under $GITHUB_WORKSPACE, so the job can access it
+      - uses: actions/checkout@v2
+
+# Sets up java in the server
+      - name: Setup-JAVA
+        uses: actions/setup-java@v2.4.0
+        with:
+          distribution: 'temurin' 
+          java-version: '17'
+
+# Download the latest release of OWLUnit jar from the Github repository
+      - name: Setup-OWLUnit
+        run: |
+            curl -s https://api.github.com/repos/luigi-asprino/owl-unit/releases/latest \
+            | grep browser_download_url \
+            | cut -d : -f 2,3 \
+            | tr -d \" \
+            | wget -qi -
+
+# Install OWLUnit         
+      - name: Install OWLUnit
+        run: |
+            java -jar OWLUnit-0.3.2.jar
+
+
+      
+      
+      
+    
+    
+    
+      
+    
+    
+    

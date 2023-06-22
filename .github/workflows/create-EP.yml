@@ -1,0 +1,55 @@
+name: Construct EP test cases
+
+on: 
+  workflow_dispatch:
+jobs:
+  validate-EP:
+    runs-on: ubuntu-latest
+        
+    steps:
+      - name: Checkout V2
+        uses: actions/checkout@v2
+      
+      - name: Construct ER test cases
+        run: |
+          echo "$epPath"
+          epPath="XDTesting/AnimalBehavior/Animal/GeneralConstraints.txt"
+          epRequirements=$(grep -i '[IV][0-9][0-9]*:\s' $epPath)
+          
+          base="https://raw.githubusercontent.com/"
+          base1=$(git config --get remote.origin.url | sed 's/.*\/\([^ ]*\/[^.]*\).*/\1/')
+          
+          echo "$MPbase"
+          MPbase="/main/XDTesting/AnimalBehavior/Animal/RecordingProcess.owl"
+          
+          echo "$tdbase"
+          tdbase="/main/XDTesting/AnimalBehavior/Animal/ErrorProvocationTest/ERDataSet/"
+          
+          echo "$tcbase"
+          tcbase="/main/XDTesting/AnimalBehavior/Animal/ErrorProvocationTest/ERTestCase/"
+          
+          echo "$mp"
+          mp="$base$base1$MPbase"
+          
+          echo "$ertd"
+          eptd="$base$base1$tdbase"
+          
+          echo "$ertc"
+          eptc="$base$base1$tcbase"
+          
+          mpPrefix="@prefix mp: < ${mp} > ."
+          tdPrefix="@prefix td: < ${eptd} > ."
+          tcPrefix="@prefix mp: < ${eptc} > ."
+          
+          echo '@prefix owlunit: <https://w3id.org/OWLunit/ontology/> . ' > epTemplate.txt
+          echo $mpPrefix >> epTemplate.txt 
+          echo $tdPrefix >> epTemplate.txt 
+          echo $tcPrefix >> epTemplate.txt 
+          echo 'tc:01 a owlunit:ErrorProvocation ; owlunit:hasInputData td:EPDataSet.ttl ; owlunit:testsOntology mp: . ' >> epTemplate.txt 
+          
+          cp epTemplate.txt XDTesting/AnimalBehavior/Animal/ErrorProvocationTest/EPTestCase/EPTestCase.ttl
+      
+      - name: Pull-to-master
+        uses: peter-evans/create-pull-request@v3
+          
+        
