@@ -1,67 +1,67 @@
 {
-  "ontologies": [
-    {
-      "url": "https://raw.githubusercontent.com/XDTest/main/.xd-testing/AnimalBehavior/AnimalBehavior",
-      "name": "AnimalBehavior"
-    }
-  ],
-  "fragments": [
-    {
-      "name": "AnimalBehaviorFragment",
-      "ontologyName": "AnimalBehavior",
-      "fileName": "AnimalBehavior/AnimalBehaviorFragment/AnimalBehavior.owl",
-      "tests": [
+    "ontologies": [
         {
-          "type": "COMPETENCY_QUESTION",
-          "content": "Requirement",
-          "reasoner": "hermiT 1.4.3.456",
-          "status": "running",
-          "statusNotes": "Some notes",
-          "issue": "https://raw.githubusercontent.com/XDTest/main/Test-Public-Repo/issues/1",
-          "queryFileName": "AnimalBehavior/AnimalBehaviorFragment/queries/note.txt",
-          "data": "Some prefixes\n\nabc abc abc\ndef def def",
-          "expectedResults": "Some prefixes\n\ndef def def",
-          "id": "CQ001"
+            "url": "https://raw.githubusercontent.com/XDTest/main/.xd-testing/AnimalBehavior/AnimalBehavior",
+            "name": "AnimalBehavior"
         }
-      ]
-    },
-    {
-      "name": "Fragment 2",
-      "ontologyName": "AnimalBehavior",
-      "fileName": "AnimalBehavior/AnimalBehaviorFragment/note.txt",
-      "tests": [
+    ],
+    "fragments": [
         {
-          "type": "COMPETENCY_QUESTION",
-          "content": "Requirement",
-          "reasoner": "hermiT 1.4.3.456",
-          "status": "running",
-          "statusNotes": "Some notes",
-          "issue": "https://raw.githubusercontent.com/XDTest/main/Test-Public-Repo/issues/1",
-          "queryFileName": "AnimalBehavior/AnimalBehaviorFragment/queries/note.txt",
-          "data": "Some prefixes\n\nabc abc abc\ndef def def",
-          "expectedResults": "Some prefixes\n\ndef def def",
-          "id": "CQ002"
-        }
-      ]
-    },
-    {
-      "name": "Fragment 3",
-      "ontologyName": "AnimalBehavior",
-      "fileName": "AnimalBehavior/AnimalBehaviorFragment/note.txt",
-      "tests": [
+            "name": "AnimalBehaviorFragment",
+            "ontologyName": "AnimalBehavior",
+            "fileName": "AnimalBehavior/AnimalBehaviorFragment/AnimalBehavior.owl",
+            "tests": [
+                {
+                    "type": "COMPETENCY_QUESTION",
+                    "content": "Requirement",
+                    "reasoner": "hermiT 1.4.3.456",
+                    "status": "warning",
+                    "statusNotes": "[Errno 20] Not a directory: './AnimalBehavior/AnimalBehavior/AnimalBehaviorFragment/CompetencyQuestionVerificationTest//CQTestCase/CQ001.ttl'",
+                    "issue": "https://raw.githubusercontent.com/XDTest/main/Test-Public-Repo/issues/1",
+                    "queryFileName": "AnimalBehavior/AnimalBehaviorFragment/queries/note.txt",
+                    "data": "Some prefixes\n\nabc abc abc\ndef def def",
+                    "expectedResults": "Some prefixes\n\ndef def def",
+                    "id": "CQ001"
+                }
+            ]
+        },
         {
-          "type": "COMPETENCY_QUESTION",
-          "content": "Requirement",
-          "reasoner": "hermiT 1.4.3.456",
-          "status": "running",
-          "statusNotes": "Some notes",
-          "issue": "https://raw.githubusercontent.com/XDTest/main/Test-Public-Repo/issues/1",
-          "queryFileName": "AnimalBehavior/AnimalBehaviorFragment/queries/note.txt",
-          "data": "Some prefixes\n\nabc abc abc\ndef def def",
-          "expectedResults": "Some prefixes\n\ndef def def",
-          "id": "CQ003"
+            "name": "Fragment 2",
+            "ontologyName": "AnimalBehavior",
+            "fileName": "AnimalBehavior/AnimalBehaviorFragment/note.txt",
+            "tests": [
+                {
+                    "type": "COMPETENCY_QUESTION",
+                    "content": "Requirement",
+                    "reasoner": "hermiT 1.4.3.456",
+                    "status": "warning",
+                    "statusNotes": "[Errno 20] Not a directory: './AnimalBehavior/AnimalBehavior/Fragment2/CompetencyQuestionVerificationTest//CQTestCase/CQ002.ttl'",
+                    "issue": "https://raw.githubusercontent.com/XDTest/main/Test-Public-Repo/issues/1",
+                    "queryFileName": "AnimalBehavior/AnimalBehaviorFragment/queries/note.txt",
+                    "data": "Some prefixes\n\nabc abc abc\ndef def def",
+                    "expectedResults": "Some prefixes\n\ndef def def",
+                    "id": "CQ002"
+                }
+            ]
+        },
+        {
+            "name": "Fragment 3",
+            "ontologyName": "AnimalBehavior",
+            "fileName": "AnimalBehavior/AnimalBehaviorFragment/note.txt",
+            "tests": [
+                {
+                    "type": "COMPETENCY_QUESTION",
+                    "content": "Requirement",
+                    "reasoner": "hermiT 1.4.3.456",
+                    "status": "warning",
+                    "statusNotes": "[Errno 20] Not a directory: './AnimalBehavior/AnimalBehavior/Fragment3/CompetencyQuestionVerificationTest//CQTestCase/CQ003.ttl'",
+                    "issue": "https://raw.githubusercontent.com/XDTest/main/Test-Public-Repo/issues/1",
+                    "queryFileName": "AnimalBehavior/AnimalBehaviorFragment/queries/note.txt",
+                    "data": "Some prefixes\n\nabc abc abc\ndef def def",
+                    "expectedResults": "Some prefixes\n\ndef def def",
+                    "id": "CQ003"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
