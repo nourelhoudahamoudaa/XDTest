@@ -1,7 +1,7 @@
 {
   "ontologies": [
     {
-      "url": "https://raw.githubusercontent.com/XDTest/main/.xd-testing/AnimalBehavior/AnimalBehavior",
+      "url": "https://raw.githubusercontent.com/XDTest/main/.xd-testing/AnimalBehavior/",
       "name": "AnimalBehavior"
     }
   ],
