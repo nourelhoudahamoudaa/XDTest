@@ -406,10 +406,10 @@ def createTestCaseAndDataSetFile(fileData, fileName, repoName):
                         # validateSPARQL(getQueryContent(testData))
                         # validateJSON(getExpectedResultsContent(testData))
 
-                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/mainXDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/main/XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/CompetencyQuestionVerificationTest/"
 
-                        testFilePath = ".XDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFilePath = "./XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/CompetencyQuestionVerificationTest/"
                         with open(testFilePath+'/CQTestCase/'+getID(testData)+'.ttl', 'w') as f:
                             f.write(
@@ -452,9 +452,9 @@ def createTestCaseAndDataSetFile(fileData, fileName, repoName):
                 elif (getTestType(testData) == 'INFERENCE_VERIFICATION'):
                     try:
                         # validateSPARQL(getQueryContent(testData))
-                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/mainXDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/main/XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/InferenceVerificationTest/"
-                        testFilePath = ".XDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFilePath = "./XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/InferenceVerificationTest/"
                         with open(testFilePath+'/IVTestCase/'+getID(testData)+'.ttl', 'w') as f:
                             f.write(
@@ -490,10 +490,10 @@ def createTestCaseAndDataSetFile(fileData, fileName, repoName):
 
                 elif (getTestType(testData) == 'ERROR_PROVOCATION'):
                     try:
-                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/mainXDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/main/XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/ErrorProvocationTest/"
 
-                        testFilePath = ".XDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFilePath = "./XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/ErrorProvocationTest/"
                         with open(testFilePath+'EPTestCase/'+getID(testData)+'.ttl', 'w') as f:
                             f.write(
@@ -674,10 +674,10 @@ def executeTestCase(fileData, fileName, repoName, token):
                 testData = fileData['fragments'][indexFragment]['tests'][indexTest]
                 if (getTestType(testData) == 'COMPETENCY_QUESTION'):
                     try:
-                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/mainXDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/main/XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/CompetencyQuestionVerificationTest/"
 
-                        testFilePath = ".XDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFilePath = "./XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/TestDocumentation/"
                         
                         print('---- Executing Test ----')
@@ -725,10 +725,10 @@ def executeTestCase(fileData, fileName, repoName, token):
 
                 elif (getTestType(testData) == 'INFERENCE_VERIFICATION'):
                     try:
-                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/mainXDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/main/XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/InferenceVerificationTest/"
 
-                        testFilePath = ".XDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFilePath = "./XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/TestDocumentation/"
                         print('---- Executing Test ----')
                         os.system(
@@ -775,10 +775,10 @@ def executeTestCase(fileData, fileName, repoName, token):
 
                 elif (getTestType(testData) == 'ERROR_PROVOCATION'):
                     try:
-                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/mainXDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFileLink = "https://raw.githubusercontent.com/"+repoName+"/main/XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/ErrorProvocationTest/"
 
-                        testFilePath = ".XDTesting" + fileData['fragments'][indexFragment]['ontologyName'].replace(
+                        testFilePath = "./XDTesting/" + fileData['fragments'][indexFragment]['ontologyName'].replace(
                             " ", "") + "/"+fileData['fragments'][indexFragment]['name'].replace(" ", "")+"/TestDocumentation/"
                         print("Execution command: java -jar OWLUnit-0.3.2.jar --test-case "+testFileLink+"EPTestCase/"+getID(testData)+".ttl")
                         
