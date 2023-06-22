@@ -7,9 +7,9 @@
     ],
     "fragments": [
         {
-            "name": "AnimalBehaviorFragment",
+            "name": "Animal",
             "ontologyName": "AnimalBehavior",
-            "fileName": "AnimalBehaviorFragment/AnimalBehavior.owl",
+            "fileName": "Animal/AnimalBehavior.owl",
             "tests": [
                 {
                     "type": "COMPETENCY_QUESTION",
@@ -18,9 +18,9 @@
                     "status": "success",
                     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX o: <http://purl.obolibrary.org/obo/> PREFIX y: <http://www.semanticweb.org/asus/ontologies/ourontology/> SELECT  ?Category WHERE { o:GM_00 y:hasCategory ?C. ?C rdf:type ?Category }",
                     "data": "",
-                    "dataFileName": "AnimalBehaviorFragment/datasets/dataset.ttl",
+                    "dataFileName": "Animal/datasets/dataset.ttl",
                     "expectedResults": "",
-                    "expectedResultsFileName": "AnimalBehaviorFragment/expectedResults/ER.json",
+                    "expectedResultsFileName": "Animal/expectedResults/ER.json",
                     "id": "CQ001",
                     "check": 1,
                     "statusNotes": "Executed"
@@ -32,7 +32,7 @@
                     "status": "failed",
                     "query": "",
                     "data": "",
-                    "dataFileName": "AnimalBehaviorFragment/datasets/dataset.ttl",
+                    "dataFileName": "Animal/datasets/dataset.ttl",
                     "expectedResults": "",
                     "id": "IV001",
                     "check": 0,
@@ -44,7 +44,7 @@
                     "reasoner": "hermiT 1.4.3.456",
                     "status": "failed",
                     "data": "",
-                    "dataFileName": "AnimalBehaviorFragment/datasets/EPData.ttl",
+                    "dataFileName": "Animal/datasets/EPData.ttl",
                     "expectedResults": "",
                     "id": "EP001",
                     "statusNotes": "<Response [401]>",
