@@ -29,25 +29,25 @@
                     "type": "INFERENCE_VERIFICATION",
                     "content": "",
                     "reasoner": "hermiT 1.4.3.456",
-                    "status": "failed",
+                    "status": "warning",
                     "query": "",
                     "data": "",
                     "dataFileName": "AnimalBehaviorFragment/datasets/dataset.ttl",
                     "expectedResults": "",
                     "id": "IV001",
                     "check": 0,
-                    "statusNotes": "<Response [401]>"
+                    "statusNotes": "[Errno 2] No such file or directory: '.xd-testing/AnimalBehaviorFragment/datasets/dataset.ttl'"
                 },
                 {
                     "type": "ERROR_PROVOCATION",
                     "content": "",
                     "reasoner": "hermiT 1.4.3.456",
-                    "status": "failed",
+                    "status": "warning",
                     "data": "",
                     "dataFileName": "AnimalBehaviorFragment/datasets/EPData.ttl",
                     "expectedResults": "",
                     "id": "EP001",
-                    "statusNotes": "<Response [401]>",
+                    "statusNotes": "[Errno 2] No such file or directory: '.xd-testing/AnimalBehaviorFragment/datasets/EPData.ttl'",
                     "check": 0
                 }
             ]
