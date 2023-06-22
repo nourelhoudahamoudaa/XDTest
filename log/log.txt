@@ -14,3 +14,7 @@
  INFO 2023-06-22 16:02:17,817 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/AnimalBehaviorFragment/InferenceVerificationTest/IVTestCase/IV001.ttl
  INFO 2023-06-22 16:02:19,570 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/AnimalBehaviorFragment/ErrorProvocationTest/EPTestCase/EP001.ttl
  INFO 2023-06-22 16:02:21,245 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/AnimalBehaviorFragment/ErrorProvocationTest/EPTestCase/EP001.ttl
+ INFO 2023-06-22 16:07:42,813 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/Animal/InferenceVerificationTest/IVTestCase/IV001.ttl
+ INFO 2023-06-22 16:07:45,643 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/Animal/InferenceVerificationTest/IVTestCase/IV001.ttl
+ INFO 2023-06-22 16:07:47,177 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/Animal/ErrorProvocationTest/EPTestCase/EP001.ttl
+ INFO 2023-06-22 16:07:48,509 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/Animal/ErrorProvocationTest/EPTestCase/EP001.ttl

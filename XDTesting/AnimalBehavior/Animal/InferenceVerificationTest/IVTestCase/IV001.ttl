@@ -1,0 +1,11 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ns: <https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/.xd-testing/Animal/AnimalBehavior.owl> .
+@prefix td: <https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/Animal/InferenceVerificationTest/IVDataSet/> .
+@prefix tc: <https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/Animal/InferenceVerificationTest/IVTestCase/> .
+
+tc:IV001.ttl a owlunit:InferenceVerification ;
+	owlunit:hasSPARQLUnitTest "" ;
+	owlunit:hasInputData td:IV001TD.ttl ;
+	owlunit:hasExpectedResult true ;
+	owlunit:hasReasoner owlunit:HermiT ;
+	owlunit:testsOntology ns: .
