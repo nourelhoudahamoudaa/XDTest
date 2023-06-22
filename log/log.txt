@@ -1,4 +1,0 @@
- INFO 2023-06-18 14:04:02,971 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/XDTest/main/XDTesting/AnimalBehavior/Animal/InferenceVerificationTest/IVTestCase/IV001.ttl
- INFO 2023-06-18 14:04:08,655 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/XDTest/main/XDTesting/AnimalBehavior/Animal/InferenceVerificationTest/IVTestCase/IV001.ttl
- INFO 2023-06-18 14:04:11,786 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/XDTest/main/XDTesting/AnimalBehavior/Animal/ErrorProvocationTest/EPTestCase/EP001.ttl
- INFO 2023-06-18 14:04:13,636 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/XDTest/main/XDTesting/AnimalBehavior/Animal/ErrorProvocationTest/EPTestCase/EP001.ttl

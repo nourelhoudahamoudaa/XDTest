@@ -1,57 +1,67 @@
 {
-    "fragments": [
+  "ontologies": [
+    {
+      "url": "https://raw.githubusercontent.com/XDTest/main/.xd-testing/AnimalBehavior/AnimalBehavior",
+      "name": "AnimalBehavior"
+    }
+  ],
+  "fragments": [
+    {
+      "name": "AnimalBehaviorFragment",
+      "ontologyName": "AnimalBehavior",
+      "fileName": "AnimalBehavior/AnimalBehaviorFragment/AnimalBehavior.owl",
+      "tests": [
         {
-            "name": "Animal",
-            "ontologyName": "AnimalBehavior",
-            "fileName": "Ontoloy Network/AnimalBehavior/Animal/Animal.owl",
-            "tests": [
-                {
-                    "type": "COMPETENCY_QUESTION",
-                    "content": "What is the category of the animal GM_00?",
-                    "reasoner": "hermiT 1.4.3.456",
-                    "status": "success",
-                    "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX o: <http://purl.obolibrary.org/obo/> PREFIX y: <http://www.semanticweb.org/asus/ontologies/ourontology/> SELECT  ?Category WHERE { o:GM_00 y:hasCategory ?C. ?C rdf:type ?Category }",
-                    "data": "",
-                    "dataFileName": "Ontoloy Network/AnimalBehavior/Animal/datasets/dataset.ttl",
-                    "expectedResults": "",
-                    "expectedResultsFileName": "Ontoloy Network/AnimalBehavior/Animal/expectedResults/ER.json",
-                    "id": "CQ001",
-                    "check": 1,
-                    "statusNotes": "Executed"
-                },
-                {
-                    "type": "INFERENCE_VERIFICATION",
-                    "content": "",
-                    "reasoner": "hermiT 1.4.3.456",
-                    "status": "failed",
-                    "query": "",
-                    "data": "",
-                    "dataFileName": "Ontoloy Network/AnimalBehavior/Animal/datasets/dataset.ttl",
-                    "expectedResults": "",
-                    "id": "IV001",
-                    "check": 0,
-                    "statusNotes": "<Response [400]>"
-                },
-                {
-                    "type": "ERROR_PROVOCATION",
-                    "content": "",
-                    "reasoner": "hermiT 1.4.3.456",
-                    "status": "failed",
-                    "data": "",
-                    "dataFileName": "Ontoloy Network/AnimalBehavior/Animal/datasets/EPData.ttl",
-                    "expectedResults": "",
-                    "id": "EP001",
-                    "statusNotes": "<Response [400]>",
-                    "check": 0
-                }
-            ]
+          "type": "COMPETENCY_QUESTION",
+          "content": "Requirement",
+          "reasoner": "hermiT 1.4.3.456",
+          "status": "running",
+          "statusNotes": "Some notes",
+          "issue": "https://raw.githubusercontent.com/XDTest/main/Test-Public-Repo/issues/1",
+          "queryFileName": "AnimalBehavior/AnimalBehaviorFragment/queries/note.txt",
+          "data": "Some prefixes\n\nabc abc abc\ndef def def",
+          "expectedResults": "Some prefixes\n\ndef def def",
+          "id": "CQ001"
         }
-    ],
-    "ontologies": [
+      ]
+    },
+    {
+      "name": "Fragment 2",
+      "ontologyName": "AnimalBehavior",
+      "fileName": "AnimalBehavior/AnimalBehaviorFragment/note.txt",
+      "tests": [
         {
-            "url": "http://www.owl-ontologies.com/AnimalBehavior",
-            "name": "AnimalBehavior",
-            "userDefined": true
+          "type": "COMPETENCY_QUESTION",
+          "content": "Requirement",
+          "reasoner": "hermiT 1.4.3.456",
+          "status": "running",
+          "statusNotes": "Some notes",
+          "issue": "https://raw.githubusercontent.com/XDTest/main/Test-Public-Repo/issues/1",
+          "queryFileName": "AnimalBehavior/AnimalBehaviorFragment/queries/note.txt",
+          "data": "Some prefixes\n\nabc abc abc\ndef def def",
+          "expectedResults": "Some prefixes\n\ndef def def",
+          "id": "CQ002"
         }
-    ]
+      ]
+    },
+    {
+      "name": "Fragment 3",
+      "ontologyName": "AnimalBehavior",
+      "fileName": "AnimalBehavior/AnimalBehaviorFragment/note.txt",
+      "tests": [
+        {
+          "type": "COMPETENCY_QUESTION",
+          "content": "Requirement",
+          "reasoner": "hermiT 1.4.3.456",
+          "status": "running",
+          "statusNotes": "Some notes",
+          "issue": "https://raw.githubusercontent.com/XDTest/main/Test-Public-Repo/issues/1",
+          "queryFileName": "AnimalBehavior/AnimalBehaviorFragment/queries/note.txt",
+          "data": "Some prefixes\n\nabc abc abc\ndef def def",
+          "expectedResults": "Some prefixes\n\ndef def def",
+          "id": "CQ003"
+        }
+      ]
+    }
+  ]
 }
