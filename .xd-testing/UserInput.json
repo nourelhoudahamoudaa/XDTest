@@ -20,7 +20,7 @@
                     "data": "",
                     "dataFileName": "Animal/datasets/dataset.ttl",
                     "expectedResults": "",
-                    "expectedResultsFileName": "Animal/expectedResults/ER.json",
+                    "expectedResultsFileName": "Animal/ExpectedResults.txt",
                     "id": "CQ001",
                     "check": 1,
                     "statusNotes": "Executed"
