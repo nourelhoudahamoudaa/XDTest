@@ -1,26 +1,20 @@
 {
-    "ontologies": [
-        {
-            "url": "https://raw.githubusercontent.com/XDTest/main/.xd-testing/",
-            "name": "AnimalBehavior"
-        }
-    ],
     "fragments": [
         {
             "name": "Animal",
-            "ontologyName": "AnimalBehavior",
-            "fileName": "Animal/AnimalBehavior.owl",
+            "ontologyName": "AnimalBevahior",
+            "fileName": "AnimalBevahior/Animal/AnimalBevahior.owl",
             "tests": [
                 {
                     "type": "COMPETENCY_QUESTION",
                     "content": "When was a musical performance recorded?",
                     "reasoner": "hermiT 1.4.3.456",
                     "status": "success",
-                    "query": " PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX o: <http://www.owl-ontologies.com/AnimalBehavior/> PREFIX x: <http://www.semanticweb.org/asus/ontologies/ourontology#> SELECT  ?Animal WHERE { ?Animal rdf:type x:Animal. ?Animal a:hasChild ?Child.}",
+                    "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX o: <http://purl.obolibrary.org/obo/> PREFIX y: <http://www.semanticweb.org/asus/ontologies/ourontology/> SELECT  ?Category WHERE { o:GM_00 y:hasCategory ?C. ?C rdf:type ?Category }",
                     "data": "",
-                    "dataFileName": "Animal/datasets/dataset.ttl",
+                    "dataFileName": "AnimalBevahior/Animal/datasets/dataset.ttl",
                     "expectedResults": "",
-                    "expectedResultsFileName": "Animal/ExpectedResults.txt",
+                    "expectedResultsFileName": "AnimalBevahior/Animal/expectedResults/ER.json",
                     "id": "CQ001",
                     "check": 1,
                     "statusNotes": "Executed"
@@ -30,9 +24,9 @@
                     "content": "",
                     "reasoner": "hermiT 1.4.3.456",
                     "status": "failed",
-                    "query": "",
+                    "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX o: <http://purl.obolibrary.org/obo/> PREFIX y: <http://www.semanticweb.org/asus/ontologies/ourontology/> ASK { o:GM_00 a o:Goat . }",
                     "data": "",
-                    "dataFileName": "Animal/datasets/dataset.ttl",
+                    "dataFileName": "AnimalBevahior/Animal/datasets/dataset.ttl",
                     "expectedResults": "",
                     "id": "IV001",
                     "check": 0,
@@ -44,13 +38,20 @@
                     "reasoner": "hermiT 1.4.3.456",
                     "status": "failed",
                     "data": "",
-                    "dataFileName": "Animal/datasets/EPData.ttl",
+                    "dataFileName": "AnimalBevahior/Animal/datasets/EPData.ttl",
                     "expectedResults": "",
                     "id": "EP001",
                     "statusNotes": "<Response [401]>",
                     "check": 0
                 }
             ]
+        }
+    ],
+    "ontologies": [
+        {
+            "url": "http://www.owl-ontologies.com/OurOnto+ATOL.owl/",
+            "name": "AnimalBevahior",
+            "userDefined": true
         }
     ]
 }

@@ -1,0 +1,1 @@
+{ \"head\": { \"vars\": [ \"Category\" ] }, \"results\": { \"bindings\": [ { \"Category\": { \"type\": \"uri\", \"value\": \"http://purl.obolibrary.org/obo/Goat\" } }, { \"Category\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/2002/07/owl#NamedIndividual\" } } ] } }
