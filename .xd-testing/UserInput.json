@@ -23,25 +23,25 @@
                     "type": "INFERENCE_VERIFICATION",
                     "content": "",
                     "reasoner": "hermiT 1.4.3.456",
-                    "status": "warning",
+                    "status": "failed",
                     "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX o: <http://purl.obolibrary.org/obo/> PREFIX y: <http://www.semanticweb.org/asus/ontologies/ourontology/> ASK { o:GM_00 a o:Goat . }",
                     "data": "",
                     "dataFileName": "AnimalBevahior/Animal/datasets/dataset.ttl",
                     "expectedResults": "",
                     "id": "IV001",
                     "check": 0,
-                    "statusNotes": "[Errno 2] No such file or directory: '.xd-testing/AnimalBevahior/Animal/datasets/dataset.ttl'"
+                    "statusNotes": "<Response [401]>"
                 },
                 {
                     "type": "ERROR_PROVOCATION",
                     "content": "",
                     "reasoner": "hermiT 1.4.3.456",
-                    "status": "warning",
+                    "status": "failed",
                     "data": "",
                     "dataFileName": "AnimalBevahior/Animal/datasets/EPData.ttl",
                     "expectedResults": "",
                     "id": "EP001",
-                    "statusNotes": "[Errno 2] No such file or directory: '.xd-testing/AnimalBevahior/Animal/datasets/EPData.ttl'",
+                    "statusNotes": "<Response [401]>",
                     "check": 0
                 }
             ]
