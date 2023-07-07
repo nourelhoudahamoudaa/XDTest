@@ -1,0 +1,12 @@
+@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
+@prefix ns: <https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/.xd-testing/AnimalBehavior/Animal/Animal.owl> .
+@prefix td: <https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/Animal/CompetencyQuestionVerificationTest/CQDataSet/> .
+@prefix tc: <https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/Animal/CompetencyQuestionVerificationTest/CQTestCase/> .
+
+tc:CQ001.ttl a owlunit:CompetencyQuestionVerification ;
+	owlunit:hasCompetencyQuestion "What is the category of the animal GM_00?" ;
+	owlunit:hasSPARQLUnitTest "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX o: <http://purl.obolibrary.org/obo/> PREFIX y: <http://www.semanticweb.org/asus/ontologies/ourontology/> SELECT  ?Category WHERE { o:GM_00 y:hasCategory ?C. ?C rdf:type ?Category }" ;
+	owlunit:hasInputData td:CQ001TD.ttl ;
+	owlunit:hasInputTestDataCategory owlunit:ToyDataset ;
+	owlunit:hasExpectedResult "{ \"head\": { \"vars\": [ \"Category\" ] }, \"results\": { \"bindings\": [ { \"Category\": { \"type\": \"uri\", \"value\": \"http://purl.obolibrary.org/obo/Goat\" } }, { \"Category\": { \"type\": \"uri\", \"value\": \"http://www.w3.org/2002/07/owl#NamedIndividual\" } } ] } }"; 
+	owlunit:testsOntology ns: .
