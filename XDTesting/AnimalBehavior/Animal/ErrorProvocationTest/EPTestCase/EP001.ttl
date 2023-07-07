@@ -1,8 +1,0 @@
-@prefix owlunit: <https://w3id.org/OWLunit/ontology/> .
-@prefix ns: <https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTestingSession-main/main/.xd-testing/AnimalBevahior/AnimalFragment/AnimalBevahior.owl> .
-@prefix td: <https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTestingSession-main/main/XDTesting/AnimalBevahior/AnimalFragment/ErrorProvocationTest/EPDataSet/> .
-@prefix tc: <https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTestingSession-main/main/XDTesting/AnimalBevahior/AnimalFragment/ErrorProvocationTest/EPTestCase/> .
-
-tc:EP001.ttl a owlunit:ErrorProvocation ;
-	owlunit:hasInputData td:EP001TD.ttl ;
-	owlunit:testsOntology ns: .
