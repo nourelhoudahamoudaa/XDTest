@@ -25,7 +25,7 @@ jobs:
           base1=$(git config --get remote.origin.url | sed 's/.*\/\([^ ]*\/[^.]*\).*/\1/')
           
           echo "$MPbase"
-          MPbase="/main/XDTesting/AnimalBehavior/Animal/RecordingProcess.owl"
+          MPbase="/main/XDTesting/AnimalBehavior/Animal/Animal.owl"
           
           echo "$tdbase"
           tdbase="/main/XDTesting/AnimalBehavior/Animal/InferenceVerificationTest/IVDataSet/"

@@ -69,7 +69,7 @@ jobs:
       - name: ontology-url
         run: |
             echo "$ontologyURL"
-            ontologyURL="https://raw.githubusercontent.com/FiorelaCiroku/XD-Testing/main/XDTesting/AnimalBehavior-ontology/Situation/OWLFile.owl"
+            ontologyURL="https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/XDTesting/AnimalBehavior/Animal/Animal.owl"
             echo "The URL of the ontology is $ontologyURL"
             
       - name: OWL-url
