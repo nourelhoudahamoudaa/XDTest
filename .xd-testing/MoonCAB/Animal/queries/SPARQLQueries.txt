@@ -1,0 +1,4 @@
+SQCQ01: 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX o: <http://www.owl-ontologies.com/AnimalBehavior/Herd/>  
+SELECT  ?Category WHERE { o:Herd01Goat06 o:hasCategory ?C. ?C rdf:type ?Category }
