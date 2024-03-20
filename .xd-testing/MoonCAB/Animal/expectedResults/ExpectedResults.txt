@@ -1,0 +1,6 @@
+ER01: { 
+"head": { "vars": [ "Category" ] }, 
+"results": { "bindings": [ 
+	{ "Category": { "type": "uri", "value": "http://www.owl-ontologies.com/AnimalBehavior/Herd/Goat" } },
+	{ "Category": { "type": "uri", "value": "http://www.w3.org/2002/07/owl#NamedIndividual" } } ] 
+} }
