@@ -4,6 +4,11 @@
       "name": "Animal",
       "ontologyName": "MoonCAB",
       "fileName": "MoonCAB/Animal/AnimalBehavior_Animal.owl"
+    },
+    {
+      "name": "Behavior",
+      "ontologyName": "MoonCAB",
+      "fileName": "MoonCAB/Behavior/AnimalBehavior_Behavior.owl"
     }
   ],
   "ontologies": [
