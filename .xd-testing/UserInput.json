@@ -1,11 +1,5 @@
 {
-  "fragments": [
-    {
-      "name": "Behavior",
-      "ontologyName": "MoonCAB",
-      "fileName": "MoonCAB/Behavior/AnimalBehavior_Behavior.owl"
-    }
-  ],
+  "fragments": [],
   "ontologies": [
     {
       "url": "https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/.xd-testing/MoonCAB/MoonCAB1.owl",
