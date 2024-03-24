@@ -1,35 +1,6 @@
 {
   "fragments": [
     {
-      "name": "Animal",
-      "ontologyName": "MoonCAB",
-      "fileName": "MoonCAB/Animal/AnimalBehavior_Animal.owl",
-      "tests": [
-        {
-          "type": "COMPETENCY_QUESTION",
-          "content": "",
-          "reasoner": "hermiT 1.4.3.456",
-          "status": "running",
-          "query": "SELECT  ?Category WHERE { o:Herd01Goat06 y:hasCategory ?C. ?C rdf:type ?Category }",
-          "data": "rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \no: <http://purl.obolibrary.org/obo/> \ny: <http://www.semanticweb.org/asus/ontologies/ourontology/>\n\nHerd01Goat06 Goat Goat",
-          "expectedResults": "rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \no: <http://purl.obolibrary.org/obo/> \ny: <http://www.semanticweb.org/asus/ontologies/ourontology/>\n\nHerd01Goat06 Goat Goat",
-          "id": "CQ001"
-        },
-        {
-          "type": "COMPETENCY_QUESTION",
-          "content": "",
-          "reasoner": "hermiT 1.4.3.456",
-          "status": "running",
-          "queryFileName": "MoonCAB/Animal/queries/SPARQLQueries.txt",
-          "data": "",
-          "dataFileName": "MoonCAB/Animal/datasets/CompetencyQuestions.txt",
-          "expectedResults": "",
-          "expectedResultsFileName": "MoonCAB/Animal/expectedResults/ExpectedResults.txt",
-          "id": "CQ002"
-        }
-      ]
-    },
-    {
       "name": "Behavior",
       "ontologyName": "MoonCAB",
       "fileName": "MoonCAB/Behavior/AnimalBehavior_Behavior.owl"
