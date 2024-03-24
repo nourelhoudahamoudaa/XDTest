@@ -1,10 +1,4 @@
 {
   "fragments": [],
-  "ontologies": [
-    {
-      "url": "https://raw.githubusercontent.com/nourelhoudahamoudaa/XDTest/main/.xd-testing/MoonCAB/MoonCAB1.owl",
-      "name": "MoonCAB",
-      "userDefined": true
-    }
-  ]
+  "ontologies": []
 }
