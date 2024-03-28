@@ -1,30 +1,32 @@
 {
-  "fragments": [
-    {
-      "name": "Animal",
-      "ontologyName": "AnimalBehavior",
-      "fileName": "AnimalBehavior/Animal/Animal_20240328130038181.owl",
-      "tests": [
+    "fragments": [
         {
-          "type": "COMPETENCY_QUESTION",
-          "content": "What is the category of the animal GM_00?",
-          "reasoner": "hermiT 1.4.3.456",
-          "status": "running",
-          "queryFileName": "AnimalBehavior/Animal/queries/SPARQLQueries.txt",
-          "data": "",
-          "dataFileName": "AnimalBehavior/Animal/datasets/EPData.ttl",
-          "expectedResults": "",
-          "expectedResultsFileName": "AnimalBehavior/Animal/expectedResults/ER.json",
-          "id": "CQ001"
+            "name": "Animal",
+            "ontologyName": "AnimalBehavior",
+            "fileName": "AnimalBehavior/Animal/Animal_20240328130038181.owl",
+            "tests": [
+                {
+                    "type": "COMPETENCY_QUESTION",
+                    "content": "What is the category of the animal GM_00?",
+                    "reasoner": "hermiT 1.4.3.456",
+                    "status": "failed",
+                    "queryFileName": "AnimalBehavior/Animal/queries/SPARQLQueries.txt",
+                    "data": "",
+                    "dataFileName": "AnimalBehavior/Animal/datasets/EPData.ttl",
+                    "expectedResults": "",
+                    "expectedResultsFileName": "AnimalBehavior/Animal/expectedResults/ER.json",
+                    "id": "CQ001",
+                    "check": 0,
+                    "statusNotes": "<Response [401]>"
+                }
+            ]
         }
-      ]
-    }
-  ],
-  "ontologies": [
-    {
-      "url": "https://github.com/nourelhoudahamoudaa/XDTest/blob/create-pull-request/patch/AnimalBehavior",
-      "name": "AnimalBehavior",
-      "userDefined": true
-    }
-  ]
+    ],
+    "ontologies": [
+        {
+            "url": "https://github.com/nourelhoudahamoudaa/XDTest/blob/create-pull-request/patch/AnimalBehavior",
+            "name": "AnimalBehavior",
+            "userDefined": true
+        }
+    ]
 }
