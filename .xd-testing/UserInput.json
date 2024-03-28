@@ -1,4 +1,10 @@
 {
   "fragments": [],
-  "ontologies": []
+  "ontologies": [
+    {
+      "url": "https://github.com/nourelhoudahamoudaa/XDTest/blob/create-pull-request/patch/AnimalBehavior",
+      "name": "AnimalBehavior",
+      "userDefined": true
+    }
+  ]
 }
