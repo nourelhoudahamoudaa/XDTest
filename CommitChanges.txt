@@ -1,155 +1,187 @@
 diff --git a/CommitChanges.txt b/CommitChanges.txt
-index 39ff8aa..0f24232 100644
+index 0f24232..b8b5333 100644
 --- a/CommitChanges.txt
 +++ b/CommitChanges.txt
-@@ -1,123 +1,27 @@
--diff --git a/CommitChanges.txt b/CommitChanges.txt
--index 873757b..c44bd49 100644
----- a/CommitChanges.txt
--+++ b/CommitChanges.txt
--@@ -1,105 +1,13 @@
---diff --git a/CommitChanges.txt b/CommitChanges.txt
---new file mode 100644
---index 0000000..583f505
------ /dev/null
---+++ b/CommitChanges.txt
---@@ -0,0 +1,99 @@
---+diff --git a/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/EP001-v2.md b/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/EP001-v2.md
---+deleted file mode 100644
---+index 6dfc38e..0000000
---+--- a/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/EP001-v2.md
---++++ /dev/null
---+@@ -1,11 +0,0 @@
---+-| Test case documentation |      Information      |
---+-| ----------------------- | --------------------- |
---+-| Test case ID            | EP001                 |
---+-| Test category           | ERROR_PROVOCATION     |
---+-| Input test data         | EPDataSet/EP001TD.ttl |
---+-| Expected result         | False                 |
---+-| Actual result           | True                  |
---+-| Executed on             | 2023-06-22T00:00:00   |
---+-| Environment             | GITHUB                |
---+-| Execution result        | FAILED                |
---+-| Execution comment       |                       |
---+diff --git a/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/IV001-v2.md b/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/IV001-v2.md
---+deleted file mode 100644
---+index a167504..0000000
---+--- a/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/IV001-v2.md
---++++ /dev/null
---+@@ -1,12 +0,0 @@
---+-| Test case documentation |      Information       |
---+-| ----------------------- | ---------------------- |
---+-| Test case ID            | IV001                  |
---+-| Test category           | INFERENCE_VERIFICATION |
---+-| Test                    |                        |
---+-| Input test data         | IVDataSet/IV001TD.ttl  |
---+-| Expected result         | True                   |
---+-| Actual result           | False                  |
---+-| Executed on             | 2023-06-22T00:00:00    |
---+-| Environment             | GITHUB                 |
---+-| Execution result        | FAILED                 |
---+-| Execution comment       |                        |
---+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQDataSet/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQDataSet/README.md
---+deleted file mode 100644
---+index 46fac39..0000000
---+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQDataSet/README.md
---++++ /dev/null
---+@@ -1 +0,0 @@
---+-This directory stores the sample dataset for the Competency Question Verification test cases.
---+\ No newline at end of file
---+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQTestCase/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQTestCase/README.md
---+deleted file mode 100644
---+index 8f10e01..0000000
---+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQTestCase/README.md
---++++ /dev/null
---+@@ -1 +0,0 @@
---+-This directory stores Competency Question Verification test cases.
---+\ No newline at end of file
---+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPDataSet/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPDataSet/README.md
---+deleted file mode 100644
---+index 936761a..0000000
---+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPDataSet/README.md
---++++ /dev/null
---+@@ -1 +0,0 @@
---+-This directory stores the sample dataset for the Error Provocation test cases.
---+\ No newline at end of file
---+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPTestCase/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPTestCase/README.md
---+deleted file mode 100644
---+index 65e5f0d..0000000
---+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPTestCase/README.md
---++++ /dev/null
---+@@ -1 +0,0 @@
---+-This directory stores Error Provocation test cases.
---+\ No newline at end of file
---+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVDataSet/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVDataSet/README.md
---+deleted file mode 100644
---+index 3805ed9..0000000
---+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVDataSet/README.md
---++++ /dev/null
---+@@ -1 +0,0 @@
---+-This directory stores the sample dataset for the Inference Verification test cases.
---+\ No newline at end of file
---+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVTestCase/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVTestCase/README.md
---+deleted file mode 100644
---+index fe1c36a..0000000
---+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVTestCase/README.md
---++++ /dev/null
---+@@ -1 +0,0 @@
---+-This directory stores Inference Verification test cases.
---+\ No newline at end of file
---+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/FailedTests/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/FailedTests/README.md
---+deleted file mode 100644
---+index 2255584..0000000
---+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/FailedTests/README.md
---++++ /dev/null
---+@@ -1 +0,0 @@
---+-This directory stores failed tests.
---+\ No newline at end of file
---+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/PassedTests/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/PassedTests/README.md
---+deleted file mode 100644
---+index d43a14a..0000000
---+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/PassedTests/README.md
---++++ /dev/null
---+@@ -1 +0,0 @@
---+-This directory stores successfully passed tests.
---+\ No newline at end of file
--+diff --git a/.xd-testing/UserInput.json b/.xd-testing/UserInput.json
--+index d08181c..1adfaa1 100644
--+--- a/.xd-testing/UserInput.json
--++++ b/.xd-testing/UserInput.json
--+@@ -20,7 +20,7 @@
--+                     "data": "",
--+                     "dataFileName": "Animal/datasets/dataset.ttl",
--+                     "expectedResults": "",
--+-                    "expectedResultsFileName": "Animal/expectedResults/ER.json",
--++                    "expectedResultsFileName": "Animal/ExpectedResults.txt",
--+                     "id": "CQ001",
--+                     "check": 1,
--+                     "statusNotes": "Executed"
-+diff --git a/.xd-testing/UserInput.json b/.xd-testing/UserInput.json
-+index fc1d61f..adc34b6 100644
-+--- a/.xd-testing/UserInput.json
-++++ b/.xd-testing/UserInput.json
-+@@ -3,7 +3,21 @@
-+     {
-+       "name": "Animal",
-+       "ontologyName": "AnimalBehavior",
-+-      "fileName": "AnimalBehavior/Animal/Animal_20240328130038181.owl"
-++      "fileName": "AnimalBehavior/Animal/Animal_20240328130038181.owl",
-++      "tests": [
-++        {
-++          "type": "COMPETENCY_QUESTION",
-++          "content": "What is the category of the animal GM_00?",
-++          "reasoner": "hermiT 1.4.3.456",
-++          "status": "running",
-++          "queryFileName": "AnimalBehavior/Animal/queries/SPARQLQueries.txt",
-++          "data": "",
-++          "dataFileName": "AnimalBehavior/Animal/datasets/EPData.ttl",
-++          "expectedResults": "",
-++          "expectedResultsFileName": "AnimalBehavior/Animal/expectedResults/ER.json",
-++          "id": "CQ001"
-++        }
-++      ]
-+     }
-+   ],
-+   "ontologies": [
+@@ -1,27 +1,155 @@
+-diff --git a/.xd-testing/UserInput.json b/.xd-testing/UserInput.json
+-index fc1d61f..adc34b6 100644
+---- a/.xd-testing/UserInput.json
+-+++ b/.xd-testing/UserInput.json
+-@@ -3,7 +3,21 @@
+-     {
+-       "name": "Animal",
+-       "ontologyName": "AnimalBehavior",
+--      "fileName": "AnimalBehavior/Animal/Animal_20240328130038181.owl"
+-+      "fileName": "AnimalBehavior/Animal/Animal_20240328130038181.owl",
+-+      "tests": [
+-+        {
+-+          "type": "COMPETENCY_QUESTION",
+-+          "content": "What is the category of the animal GM_00?",
+-+          "reasoner": "hermiT 1.4.3.456",
+-+          "status": "running",
+-+          "queryFileName": "AnimalBehavior/Animal/queries/SPARQLQueries.txt",
+-+          "data": "",
+-+          "dataFileName": "AnimalBehavior/Animal/datasets/EPData.ttl",
+-+          "expectedResults": "",
+-+          "expectedResultsFileName": "AnimalBehavior/Animal/expectedResults/ER.json",
+-+          "id": "CQ001"
+-+        }
+-+      ]
+-     }
+-   ],
+-   "ontologies": [
++diff --git a/CommitChanges.txt b/CommitChanges.txt
++index 39ff8aa..0f24232 100644
++--- a/CommitChanges.txt
+++++ b/CommitChanges.txt
++@@ -1,123 +1,27 @@
++-diff --git a/CommitChanges.txt b/CommitChanges.txt
++-index 873757b..c44bd49 100644
++---- a/CommitChanges.txt
++-+++ b/CommitChanges.txt
++-@@ -1,105 +1,13 @@
++--diff --git a/CommitChanges.txt b/CommitChanges.txt
++--new file mode 100644
++--index 0000000..583f505
++----- /dev/null
++--+++ b/CommitChanges.txt
++--@@ -0,0 +1,99 @@
++--+diff --git a/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/EP001-v2.md b/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/EP001-v2.md
++--+deleted file mode 100644
++--+index 6dfc38e..0000000
++--+--- a/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/EP001-v2.md
++--++++ /dev/null
++--+@@ -1,11 +0,0 @@
++--+-| Test case documentation |      Information      |
++--+-| ----------------------- | --------------------- |
++--+-| Test case ID            | EP001                 |
++--+-| Test category           | ERROR_PROVOCATION     |
++--+-| Input test data         | EPDataSet/EP001TD.ttl |
++--+-| Expected result         | False                 |
++--+-| Actual result           | True                  |
++--+-| Executed on             | 2023-06-22T00:00:00   |
++--+-| Environment             | GITHUB                |
++--+-| Execution result        | FAILED                |
++--+-| Execution comment       |                       |
++--+diff --git a/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/IV001-v2.md b/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/IV001-v2.md
++--+deleted file mode 100644
++--+index a167504..0000000
++--+--- a/XDTesting/AnimalBehavior/AnimalBehaviorFragment/TestDocumentation/FailedTests/IV001-v2.md
++--++++ /dev/null
++--+@@ -1,12 +0,0 @@
++--+-| Test case documentation |      Information       |
++--+-| ----------------------- | ---------------------- |
++--+-| Test case ID            | IV001                  |
++--+-| Test category           | INFERENCE_VERIFICATION |
++--+-| Test                    |                        |
++--+-| Input test data         | IVDataSet/IV001TD.ttl  |
++--+-| Expected result         | True                   |
++--+-| Actual result           | False                  |
++--+-| Executed on             | 2023-06-22T00:00:00    |
++--+-| Environment             | GITHUB                 |
++--+-| Execution result        | FAILED                 |
++--+-| Execution comment       |                        |
++--+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQDataSet/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQDataSet/README.md
++--+deleted file mode 100644
++--+index 46fac39..0000000
++--+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQDataSet/README.md
++--++++ /dev/null
++--+@@ -1 +0,0 @@
++--+-This directory stores the sample dataset for the Competency Question Verification test cases.
++--+\ No newline at end of file
++--+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQTestCase/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQTestCase/README.md
++--+deleted file mode 100644
++--+index 8f10e01..0000000
++--+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/CompetencyQuestionVerificationTest/CQTestCase/README.md
++--++++ /dev/null
++--+@@ -1 +0,0 @@
++--+-This directory stores Competency Question Verification test cases.
++--+\ No newline at end of file
++--+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPDataSet/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPDataSet/README.md
++--+deleted file mode 100644
++--+index 936761a..0000000
++--+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPDataSet/README.md
++--++++ /dev/null
++--+@@ -1 +0,0 @@
++--+-This directory stores the sample dataset for the Error Provocation test cases.
++--+\ No newline at end of file
++--+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPTestCase/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPTestCase/README.md
++--+deleted file mode 100644
++--+index 65e5f0d..0000000
++--+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/ErrorProvocationTest/EPTestCase/README.md
++--++++ /dev/null
++--+@@ -1 +0,0 @@
++--+-This directory stores Error Provocation test cases.
++--+\ No newline at end of file
++--+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVDataSet/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVDataSet/README.md
++--+deleted file mode 100644
++--+index 3805ed9..0000000
++--+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVDataSet/README.md
++--++++ /dev/null
++--+@@ -1 +0,0 @@
++--+-This directory stores the sample dataset for the Inference Verification test cases.
++--+\ No newline at end of file
++--+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVTestCase/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVTestCase/README.md
++--+deleted file mode 100644
++--+index fe1c36a..0000000
++--+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/InferenceVerificationTest/IVTestCase/README.md
++--++++ /dev/null
++--+@@ -1 +0,0 @@
++--+-This directory stores Inference Verification test cases.
++--+\ No newline at end of file
++--+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/FailedTests/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/FailedTests/README.md
++--+deleted file mode 100644
++--+index 2255584..0000000
++--+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/FailedTests/README.md
++--++++ /dev/null
++--+@@ -1 +0,0 @@
++--+-This directory stores failed tests.
++--+\ No newline at end of file
++--+diff --git a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/PassedTests/README.md b/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/PassedTests/README.md
++--+deleted file mode 100644
++--+index d43a14a..0000000
++--+--- a/XDTesting/AnimalBehavior/IntegrationRegressionTestDocumentation/TestDocumentation/PassedTests/README.md
++--++++ /dev/null
++--+@@ -1 +0,0 @@
++--+-This directory stores successfully passed tests.
++--+\ No newline at end of file
++-+diff --git a/.xd-testing/UserInput.json b/.xd-testing/UserInput.json
++-+index d08181c..1adfaa1 100644
++-+--- a/.xd-testing/UserInput.json
++-++++ b/.xd-testing/UserInput.json
++-+@@ -20,7 +20,7 @@
++-+                     "data": "",
++-+                     "dataFileName": "Animal/datasets/dataset.ttl",
++-+                     "expectedResults": "",
++-+-                    "expectedResultsFileName": "Animal/expectedResults/ER.json",
++-++                    "expectedResultsFileName": "Animal/ExpectedResults.txt",
++-+                     "id": "CQ001",
++-+                     "check": 1,
++-+                     "statusNotes": "Executed"
+++diff --git a/.xd-testing/UserInput.json b/.xd-testing/UserInput.json
+++index fc1d61f..adc34b6 100644
+++--- a/.xd-testing/UserInput.json
++++++ b/.xd-testing/UserInput.json
+++@@ -3,7 +3,21 @@
+++     {
+++       "name": "Animal",
+++       "ontologyName": "AnimalBehavior",
+++-      "fileName": "AnimalBehavior/Animal/Animal_20240328130038181.owl"
++++      "fileName": "AnimalBehavior/Animal/Animal_20240328130038181.owl",
++++      "tests": [
++++        {
++++          "type": "COMPETENCY_QUESTION",
++++          "content": "What is the category of the animal GM_00?",
++++          "reasoner": "hermiT 1.4.3.456",
++++          "status": "running",
++++          "queryFileName": "AnimalBehavior/Animal/queries/SPARQLQueries.txt",
++++          "data": "",
++++          "dataFileName": "AnimalBehavior/Animal/datasets/EPData.ttl",
++++          "expectedResults": "",
++++          "expectedResultsFileName": "AnimalBehavior/Animal/expectedResults/ER.json",
++++          "id": "CQ001"
++++        }
++++      ]
+++     }
+++   ],
+++   "ontologies": [
