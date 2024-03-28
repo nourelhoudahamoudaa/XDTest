@@ -1,5 +1,11 @@
 {
-  "fragments": [],
+  "fragments": [
+    {
+      "name": "Animal",
+      "ontologyName": "AnimalBehavior",
+      "fileName": "AnimalBehavior/Animal/Animal_20240328130038181.owl"
+    }
+  ],
   "ontologies": [
     {
       "url": "https://github.com/nourelhoudahamoudaa/XDTest/blob/create-pull-request/patch/AnimalBehavior",
